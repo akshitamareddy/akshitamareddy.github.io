@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshita Mareddy | Tech Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f9;
+            color: #222;
+        }
+
+        nav {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav h2 {
+            font-size: 20px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #444;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 10%;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px 16px;
+            border-radius: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-tech {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 16px;
+            background: #111;
+            color: white;
+            border-radius: 8px;
+            margin-right: 8px;
+        }
+
+        .about p {
+            max-width: 750px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav div {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Akshita Mareddy</h2>
+
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Hi, I'm Akshita.</h1>
+
+    <h2>I build technology that solves real problems.</h2>
+
+    <p>
+        I'm interested in software development, data analytics,
+        artificial intelligence, and building useful digital tools.
+        This portfolio showcases projects I've built while expanding
+        my technical skills.
+    </p>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+
+    <p>
+        I'm a student interested in the intersection of technology,
+        data, and real-world problem solving. I enjoy building projects
+        that allow me to explore programming, analytics, automation,
+        and artificial intelligence.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">R</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">Data Analytics</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Smart Task Manager</h3>
+
+            <p>
+                A task management web application that allows users
+                to organize tasks, set priorities and deadlines,
+                filter tasks, and receive browser notifications.
+            </p>
+
+            <div class="project-tech">
+                HTML • CSS • JavaScript • Web Notifications API
+            </div>
+
+            <a class="button" href="#" target="_blank">
+                Live Demo
+            </a>
+
+            <a class="button" href="#" target="_blank">
+                GitHub
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Coming Soon</h3>
+
+            <p>
+                My next data, AI, or software development project
+                will be featured here.
+            </p>
+
+            <div class="project-tech">
+                Python • Data Analytics
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        Connect with me through GitHub and LinkedIn.
+    </p>
+
+    <br>
+
+    <a
+        class="button"
+        href="https://github.com/akshitamareddy"
+        target="_blank"
+    >
+        GitHub
+    </a>
+</section>
+
+<footer>
+    © 2026 Akshita Mareddy
+</footer>
+
+</body>
+</html>
